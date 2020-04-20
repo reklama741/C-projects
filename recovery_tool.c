@@ -37,7 +37,6 @@ int main(int argc, char *argv[])
                 {
                     fclose(file2);
                     sprintf(current_jpg, "%03i.jpg", jpgcounter);
-                    printf("%s", current_jpg);
                     file2 = fopen(current_jpg, "w");
                     fwrite(buffer, sizeof(BYTE), 512, file2);
                     jpgcounter++;
